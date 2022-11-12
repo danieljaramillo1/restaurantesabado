@@ -12,7 +12,7 @@ class FormularioPlatos(forms.Form):
         required=True,
         max_length=5,
         label='Nombre Empleado: ',
-        widget=forms.TextInput(attrs={'class':'form-control mb-3'})
+        widget=forms.TextInput(attrs={'class':'form-control mb-3','initial':"oe"})
     )
     descripcion=forms.CharField(
         required=False,
